@@ -48,6 +48,8 @@ struct wpa_driver_wext_data {
 	int driver_is_started;
 	int skip_disconnect;
 #endif
+        u8 ssid[32];
+        unsigned int ssid_len;
 };
 
 int wpa_driver_wext_get_ifflags(struct wpa_driver_wext_data *drv, int *flags);
